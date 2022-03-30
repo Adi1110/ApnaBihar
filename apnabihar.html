@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset='utf-8'>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Apna Bihar</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   </head>
+   <body background="bg4.jpg" data-spy="scroll" data-target="#navbar" data-offset="150">
+      <!-- <div class="header" id="myHeader"> -->
+		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			 <a class="navbar-brand" href="#"><strong>BIHAR</strong> <img src="main.png" alt="Bihar" height="44" width="56"></a>
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon"></span>
+			 </button>
+			 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				   <li class="">
+					  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				   </li>
+				   <li class="nav-item">
+					  <a class="nav-link" href="https://en.wikipedia.org/wiki/History_of_Bihar#:~:text=The%20history%20of%20Bihar%20is%20one%20of%20the%20most%20varied%20in%20India.&text=Regions%20of%20Bihar%E2%80%94such%20as,1100%2D500%20BCE).">
+											History</a>
+				   </li>
+				   <li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Festivals
+					  </a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						 <a class="dropdown-item" href="#">MakarSankranti</a>
+						 <div class="dropdown-divider"></div>
+						 <a class="dropdown-item" href="#">Republic day</a>
+						 <div class="dropdown-divider"></div>
+						 <a class="dropdown-item" href="#">Sarswati Puja</a>
+						 <div class="dropdown-divider"></div>
+						 <a class="dropdown-item" href="#">MahaShivRatri</a>
+						 <div class="dropdown-divider"></div>
+						 <a class="dropdown-item" href="#">Holi</a>
+					  </div>
+				   </li>
+				   <li class="nav-item">
+					  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				   </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				   <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search places" aria-label="Search"> -->
+				   <!-- input tag -->
+					<input class="form-control mr-sm-2" id="searchbar" onkeyup="search_places()" type="search" name="search" placeholder="Search places" aria-label="Search"> 
+				   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			 </div>
+		  </nav>
+	  </div>
+      <script src="jquery.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <div class="slideshow-container" id="img1">
+         <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="somnath Temple.jpg" style="width:120%" height="440px" >
+            <div class="text">Somnath Temple</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="Bihar.jpg" style="width:120%" height="440px">
+            <div class="text">Bihar</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="Bodh Gaya.jpg" style="width:120%" height="440px">
+            <div class="text">Bodh Gaya</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="museum.jpg" style="width:120%" height="440px">
+            <div class="text">Museum</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="nalanda.jpg" style="width:120%" height="440px">
+            <div class="text">Nalanda University</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="patna.jpg" style="width:130%" height="440px">
+            <div class="text">Patna</div>
+         </div>
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">7 / 7</div>
+         <img src="water park.jpg" style="width:100%" height="440px">
+         <div class="text">water Park</div>
+      </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+      </div>
+      <div class="clear"></div>
+      <script type="text/javascript" src="javascript.js"></script>
+      <div class="clear"></div>
+      <br />
+      <br />
+      <marquee direction="left" height="35%" width="90%">
+         <h2 id="moving">जहवाँ के लड़कन न माने हार।। वही तो है अपना बिहार।।।   बुद्ध,सम्राट अशोक,महावीर,गुरु गोविंद सिंह,वीर कुंवर सिंह,रेणु,दिनकर,डॉ राजेंद्र प्रसाद,विद्यापति,भिखारी ठाकुर,नालंदा विश्वविद्यालय जैसे अनगिनत महापुरुषों/स्थलों से जाना जाने वाला बिहार, हां ये है मेरा बिहार।</h2>
+      </marquee>
+      <br />
+      <br />
+      <br />
+      <div>
+         <form action="">
+            <button style="float: left;" class="button button1">Araria</button>
+         </form>
+         <form action="">
+            <button style="float: left;" type="submit" class="button button2" >Arwal</button>
+         </form>
+         <form action="">		
+            <button style="float: left;" class="button button3">Aurangabad</button>
+         </form>
+         <form action="">
+            <button style="float: left;" class="button button1">Banka</button>
+         </form>
+         <form action="">
+            <button style="float: left;" class="button button2">Banka</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button3">Begusarai</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Bhagalpur</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Bhojpur</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Buxar</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Darbhanga</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">East Champaran (Motihari)</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Gaya</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Gopalganj</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Jamui</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Jehanabad</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Kaimur (Bhabua)</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Katihar</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Khagaria</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Kishanganj</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Lakhisarai</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Madhepura</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Madhubani</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Munger (Monghyr)</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Muzaffarpur</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Nalanda</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Nawada</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Patna</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Purnia (Purnea)</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Rohtas</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Saharsa</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Samastipur</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Saran</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Sheikhpura</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Sheohar</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Sitamarhi</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Siwan</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Supaul</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">Vaishali</button>
+         </form>
+		 <form action="">
+            <button style="float: left;" class="button button1">West Champaran</button>
+         </form>
+		 <br />
+		  <br />
+		  <br />
+		 <div class="clear"></div>
+      <!-- </div> -->
+	  <div id="fixedfooter">
+		  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="" target="_blank">Aditya Ranjan</a></p>
+		</div>
+   </body>
+</html>
